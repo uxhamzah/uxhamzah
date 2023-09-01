@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import QUERIES, {
     Main,
@@ -34,8 +35,8 @@ const Landing = ({ toggleMode, mode, spread, setDisableScroll }) => {
         spread === 'first'
             ? 'growBlack'
             : spread === 'second'
-            ? 'growWhite'
-            : '';
+                ? 'growWhite'
+                : '';
 
     return (
         <Main

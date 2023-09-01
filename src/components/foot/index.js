@@ -28,24 +28,24 @@ const Foot = () => {
                             </LogoSvg>
                         </Link>
                         <Paragraph style={{ fontWeight: 300 }}>
-                            Designed and Built by Julia Johnson
+                            Designed and Built by Amir Hamzah
                         </Paragraph>
                     </FinalLeft>
                     <FinalRight>
-                        <a href='https://github.com/juliacodes'>
+                        <a href='https://github.com/uxhamzah'>
                             <Paragraph style={{ fontWeight: 300 }}>
                                 GitHub
                             </Paragraph>
                         </a>
                         <a
-                            href='https://www.linkedin.com/in/juliacodes
+                            href='https://www.linkedin.com/in/amirrhamzahh
 '
                         >
                             <Paragraph style={{ fontWeight: 300 }}>
                                 LinkedIn
                             </Paragraph>
                         </a>
-                        <a href='mailto: julia@juliacodes.com'>
+                        <a href='mailto: uxhamzah@gmail.com'>
                             <Paragraph style={{ fontWeight: 300 }}>
                                 Email
                             </Paragraph>
