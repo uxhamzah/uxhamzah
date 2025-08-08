@@ -1,38 +1,68 @@
 <svg width="800" height="180" viewBox="0 0 800 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="180" rx="24" fill="url(#paint0_linear)" />
-  <!-- Silhouette Male (simple, modern) -->
-  <circle cx="90" cy="90" r="40" fill="#23272F" />
-  <ellipse cx="90" cy="140" rx="32" ry="16" fill="#23272F"/>
-  <!-- Monitor (IT) -->
-  <rect x="160" y="65" width="90" height="60" rx="8" fill="#141B23"/>
-  <rect x="172" y="80" width="66" height="24" rx="3" fill="#1F2733"/>
-  <!-- Code Symbol -->
-  <text x="185" y="98" font-family="Fira Code, monospace" font-size="20" fill="#14C7F7" font-weight="bold">&lt;/&gt;</text>
-  <!-- Design Icon (Palette) -->
-  <circle cx="290" cy="95" r="18" fill="#F24E1E" />
-  <circle cx="285" cy="90" r="4" fill="#fff" />
-  <circle cx="295" cy="100" r="4" fill="#fff" />
-  <!-- Figma Icon -->
-  <g>
-    <circle cx="340" cy="90" r="10" fill="#0ACF83"/>
-    <circle cx="340" cy="105" r="10" fill="#A259FF"/>
-    <circle cx="350" cy="97" r="10" fill="#F24E1E"/>
-    <circle cx="330" cy="97" r="10" fill="#FF7262"/>
-  </g>
-  <!-- Grid lines (Design Element) -->
-  <line x1="400" y1="60" x2="750" y2="60" stroke="#ffffff22" stroke-width="2" stroke-dasharray="8 8"/>
-  <line x1="400" y1="120" x2="750" y2="120" stroke="#ffffff22" stroke-width="2" stroke-dasharray="8 8"/>
-  <!-- Animated blinking cursor in code box -->
-  <rect id="cursor" x="207" y="80" width="3" height="24" fill="#14C7F7">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Name (not too big, not in the center) -->
-  <text x="680" y="160" text-anchor="end" font-family="Fira Code, monospace" font-size="32" fill="#fff" opacity="0.88" font-weight="bold">uxhamzah</text>
-
   <defs>
-    <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="180" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="180" gradientUnits="userSpaceOnUse">
       <stop stop-color="#23272F"/>
-      <stop offset="1" stop-color="#14C7F7"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
     </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0.2" stop-color="#14C7F7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#23272F" stop-opacity="0"/>
+    </radialGradient>
   </defs>
+  <rect width="800" height="180" rx="24" fill="url(#bg)"/>
+  
+  <!-- Background grid lines -->
+  <g opacity="0.25">
+    <line x1="0" y1="30" x2="800" y2="30" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="0" y1="60" x2="800" y2="60" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="0" y1="90" x2="800" y2="90" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="0" y1="120" x2="800" y2="120" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="180" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="250" y1="0" x2="250" y2="180" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="180" stroke="#14C7F7" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="180" stroke="#14C7F7" stroke-width="1"/>
+  </g>
+  
+  <!-- Anime character (simple, technology, coding posture) -->
+  <g>
+    <!-- Head -->
+    <ellipse cx="110" cy="90" rx="24" ry="28" fill="#fff" stroke="#23272F" stroke-width="2"/>
+    <!-- Hair (anime style) -->
+    <path d="M87 90 Q110 50 133 90" fill="none" stroke="#23272F" stroke-width="4"/>
+    <path d="M92 85 Q110 70 128 85" fill="none" stroke="#23272F" stroke-width="2"/>
+    <!-- Eyes -->
+    <ellipse cx="102" cy="95" rx="3.5" ry="5" fill="#23272F"/>
+    <ellipse cx="118" cy="95" rx="3.5" ry="5" fill="#23272F"/>
+    <!-- Glasses -->
+    <rect x="97" y="90" width="11" height="7" rx="2.5" fill="#14C7F7" opacity="0.5"/>
+    <rect x="112" y="90" width="11" height="7" rx="2.5" fill="#14C7F7" opacity="0.5"/>
+    <!-- Body (hoodie) -->
+    <rect x="92" y="115" width="36" height="28" rx="14" fill="#23272F"/>
+    <!-- Arms -->
+    <rect x="80" y="125" width="14" height="8" rx="4" fill="#23272F"/>
+    <rect x="126" y="125" width="14" height="8" rx="4" fill="#23272F"/>
+    <!-- Laptop -->
+    <rect x="99" y="135" width="22" height="10" rx="3" fill="#1F2733" stroke="#14C7F7" stroke-width="1"/>
+    <!-- Blinking cursor on laptop screen -->
+    <rect x="110" y="138" width="2.5" height="6" fill="#14C7F7">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Floating code & design elements (tech vibes) -->
+  <text x="180" y="60" font-family="Fira Code,monospace" font-size="22" fill="#14C7F7" font-weight="bold">&lt;/&gt;</text>
+  <rect x="205" y="70" width="14" height="14" rx="4" fill="#F24E1E" />
+  <circle cx="215" cy="77" r="3" fill="#fff" />
+  <!-- Figma icon style dots -->
+  <circle cx="245" cy="90" r="7" fill="#0ACF83" />
+  <circle cx="245" cy="105" r="7" fill="#A259FF" />
+  <circle cx="258" cy="97" r="7" fill="#F24E1E" />
+  <circle cx="232" cy="97" r="7" fill="#FF7262" />
+  <!-- Neon chip/hologram effect -->
+  <rect x="340" y="65" width="32" height="16" rx="5" fill="url(#glow)" stroke="#14C7F7" stroke-width="2" opacity="0.7"/>
+  <text x="345" y="78" font-family="Fira Code,monospace" font-size="11" fill="#14C7F7">AI</text>
+  
+  <!-- Nama branding kecil -->
+  <text x="790" y="170" text-anchor="end" font-family="Fira Code, monospace" font-size="28" fill="#fff" opacity="0.90" font-weight="bold">uxhamzah</text>
 </svg>
